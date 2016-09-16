@@ -7,7 +7,7 @@
 <title>Resident Details</title>
 </head>
 <body>
-	<form action="DetailServlet">
+	<form action="ResidentialController">
 	<div>
 		Permanent Address : <textarea name="paddr" required></textarea><br>
 	</div>

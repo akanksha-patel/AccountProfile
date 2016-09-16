@@ -6,6 +6,24 @@ public class Educational {
 	private int cgpa;
 	private String favouriteSubject;
 	
+	
+	
+	@Override
+	public String toString() {
+		return "Educational [tenth=" + tenth + ", twelth=" + twelth + ", cgpa=" + cgpa + ", favouriteSubject="
+				+ favouriteSubject + "]";
+	}
+	public Educational(int tenth, int twelth, int cgpa, String favouriteSubject) {
+		super();
+		this.tenth = tenth;
+		this.twelth = twelth;
+		this.cgpa = cgpa;
+		this.favouriteSubject = favouriteSubject;
+	}
+	
+	public Educational() {
+	}
+	
 	public int getTenth() {
 		return tenth;
 	}

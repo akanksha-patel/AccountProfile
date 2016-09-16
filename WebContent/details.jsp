@@ -1,10 +1,31 @@
 <%@ taglib prefix="c" 
            uri="http://java.sun.com/jsp/jstl/core" %>
 
-<jsp:useBean id="ep" class="com.bitwise.controllers.ProfileController" scope="session">
-</jsp:useBean>
-<jsp:useBean id="op" class="com.bitwise.controllers.ResidentalController" scope="session">
-</jsp:useBean>
+<jsp:useBean id="profile" class="com.bitwise.models.Profile" scope="session"></jsp:useBean>
+<jsp:useBean id="educational" class="com.bitwise.models.Educational" scope="session"></jsp:useBean>
+<jsp:useBean id="residential" class="com.bitwise.models.Residental" scope="session"></jsp:useBean>
 
 
-<c:out value="${user}"></c:out> 
+<jsp:getProperty property="name" name="profile"/><br>
+<jsp:getProperty property="email" name="profile"/><br>
+<jsp:getProperty property="gender" name="profile"/><br>
+<jsp:getProperty property="hobbies" name="profile"/><br>
+
+
+<br><br>
+
+
+<jsp:getProperty property="tenth" name="educational"/><br>
+<jsp:getProperty property="twelth" name="educational"/><br>
+<jsp:getProperty property="cgpa" name="educational"/><br>
+<jsp:getProperty property="favouriteSubject" name="educational"/><br>
+
+
+
+<br><br>
+
+
+<jsp:getProperty property="permanentAddress" name="residential"/><br>
+<jsp:getProperty property="temporaryAddress" name="residential"/><br>
+<jsp:getProperty property="mobile" name="residential"/><br>
+<jsp:getProperty property="landline" name="residential"/><br>

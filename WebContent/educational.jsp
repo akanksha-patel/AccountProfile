@@ -7,7 +7,7 @@
 <title>Education Details</title>
 </head>
 <body>
-	<form action="ResidentalController" name="residentalform">
+	<form action="EducationalController" name="residentalform">
 	<div>
 		10th % : <input type="text" name="tenth"> &nbsp;&nbsp;&nbsp;
 		12th % : <input type="text" name="twelth"><br>

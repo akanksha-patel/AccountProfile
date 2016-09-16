@@ -6,6 +6,22 @@ public class Profile {
 	private String gender;
 	private String hobbies;
 	
+	public Profile(){
+		
+	}
+	
+	
+	public Profile(String name, String email, String gender, String hobbies) {
+		super();
+		this.name = name;
+		this.email = email;
+		this.gender = gender;
+		this.hobbies = hobbies;
+	}
+	@Override
+	public String toString() {
+		return "Profile [name=" + name + ", email=" + email + ", gender=" + gender + ", hobbies=" + hobbies + "]";
+	}
 	public String getName() {
 		return name;
 	}

@@ -6,6 +6,29 @@ public class Residental {
 	private int mobile;
 	private int landline;
 
+	
+	
+	public Residental(String permanentAddress, String temporaryAddress, int mobile, int landline) {
+		super();
+		this.permanentAddress = permanentAddress;
+		this.temporaryAddress = temporaryAddress;
+		this.mobile = mobile;
+		this.landline = landline;
+	}
+	
+	public Residental() {
+		// TODO Auto-generated constructor stub
+	}
+	
+	
+	@Override
+	public String toString() {
+		return "Residental [permanentAddress=" + permanentAddress + ", temporaryAddress=" + temporaryAddress
+				+ ", mobile=" + mobile + ", landline=" + landline + "]";
+	}
+
+
+
 	public String getPermanentAddress() {
 		return permanentAddress;
 	}
