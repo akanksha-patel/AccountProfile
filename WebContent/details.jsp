@@ -3,7 +3,7 @@
 
 <jsp:useBean id="profile" class="com.bitwise.models.Profile" scope="session"></jsp:useBean>
 <jsp:useBean id="educational" class="com.bitwise.models.Educational" scope="session"></jsp:useBean>
-<jsp:useBean id="residential" class="com.bitwise.models.Residental" scope="session"></jsp:useBean>
+<jsp:useBean id="residental" class="com.bitwise.models.Residental" scope="session"></jsp:useBean>
 
 
 <jsp:getProperty property="name" name="profile"/><br>
@@ -25,7 +25,7 @@
 <br><br>
 
 
-<jsp:getProperty property="permanentAddress" name="residential"/><br>
-<jsp:getProperty property="temporaryAddress" name="residential"/><br>
-<jsp:getProperty property="mobile" name="residential"/><br>
-<jsp:getProperty property="landline" name="residential"/><br>
+<jsp:getProperty property="permanentAddress" name="residental"/><br>
+<jsp:getProperty property="temporaryAddress" name="residental"/><br>
+<jsp:getProperty property="mobile" name="residental"/><br>
+<jsp:getProperty property="landline" name="residental"/><br>

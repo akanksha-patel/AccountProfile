@@ -52,7 +52,7 @@ public class EducationalController extends HttpServlet {
 				educational.setTwelth(twelth);
 				educational.setCgpa(cgpa);
 				educational.setFavouriteSubject(subject);
-				session.setAttribute("profile", educational);
+				session.setAttribute("educational", educational);
 			
 		} else {
 			Educational educational = new Educational(tenth, twelth, cgpa, subject);
