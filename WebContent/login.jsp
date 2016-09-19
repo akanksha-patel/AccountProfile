@@ -7,7 +7,13 @@
 <title>Login Page</title>
 </head>
 <body>
-
+	<% String msg = (String)request.getAttribute("msg"); %>
+				<% if(msg!=null){ %>
+				<div class="msg" >
+					<%= msg %>
+				</div>
+				<% } %>
+				
 	<form action="LoginController" name="loginform">
 		<p>
 			User Name : <input type="text" name="username" />
